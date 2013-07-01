@@ -1,0 +1,94 @@
+.nav, .nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+/*IE5 list fix*/
+.nav .sub li {
+    float:left;
+}
+
+.nav .sub > li {
+    float:none;
+}
+
+#navigation {
+    position:relative;
+    height:25px;
+    background:#000;
+    z-index:10;
+}
+
+.nav {
+    position:absolute;
+    top:-20000px;/*firefox div transparency fix*/
+}
+
+.nav a.main, .nav .sub {
+    top:20000px;/*firefox div transparency fix*/
+}
+
+.nav .link {
+    width:200px;
+    margin-top:-10075px;
+    float:left;
+    text-align: center;
+}
+
+.nav a {
+    position:relative;
+    display:block;
+    height:25px;
+    line-height:25px;
+    text-decoration:none;
+    color:#FFF;
+    z-index:10;
+}
+
+.nav .sub a {
+    background:#FFDC50; /* gold */
+    margin:0 -1px 0 0;
+    width:200px;
+    color: #000;
+}
+
+.nav .sub {
+    position:relative;
+    float:left;
+    background:#340449;
+    padding-top:25px;
+    margin-top:-25px;
+    text-align: left;
+}
+
+.nav a.main {
+    width:200px;
+    height:25px;
+    line-height:25px;
+    margin-top:10075px;
+    margin-right:-199px;
+    float:left;
+}
+
+.nav a.main:hover, .nav a.main:focus, .nav a.main:active { 
+    margin-right:0;
+    background:#340449;
+    color:#fff;
+}
+
+.nav .sub a:hover, .nav .sub a:focus, .nav .sub a:active {
+    margin:0 0 0 0;
+    background:#333;
+    color:#fff;
+}
+
+
+/*empty rule to fix occassional IE6 tabbing bug, one of the weirdest bug's i have seen.*/
+a, a:hover, a:active, a:focus {}
+
+/*Opera fix*/
+.sub:hover {
+clear:both;
+}
+
