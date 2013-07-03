@@ -1,50 +1,105 @@
 <html>
-<head>
-    <title>Nav</title>
-    <link rel="stylesheet" href="./a11yNavStyle.css" type="text/css">
-</head>
-  <body>
+    <head>
+        <title>Nav</title>
+        <link rel="stylesheet" href="./css/a11yNavStyle.css" type="text/css">
+        <link rel="stylesheet" href="./css/a11yNavStyle2.css" type="text/css">
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <script type="text/javascript" src="./js/a11yMenu.js"></script>
+    </head>
+    <body>
 
-    <h1>Dropdown Menu Test: Dropper Dropdown Menu</h1>
+        <h1>Dropdown Menu Test: Dropper Dropdown Menu</h1>
         
-    <p>This is one of several dropdown menus tested on Terrill Thompson's <a href="http://staff.washington.edu/tft/tests/menus/index.html">Dropdown Menus Test Page</a>.</p>
+        <p>This is one of several dropdown menus tested on Terrill Thompson's <a href="http://staff.washington.edu/tft/tests/menus/index.html">Dropdown Menus Test Page</a>.</p>
 
-    <h2>Description</h2>
-    <p>This page uses Timo's Huovinen's Float-drop CSS-only <a href="http://thinkhtml.blogspot.com/2009/09/timos-float-drop-css-only-dropdown-menu.html">Dropper Dropdown Menu</a>, which in 2009 Timo described as "the world's most accessible dropdown menu."</p>
+        <h2>Description</h2>
+        <p>This page uses Timo's Huovinen's Float-drop CSS-only <a href="http://thinkhtml.blogspot.com/2009/09/timos-float-drop-css-only-dropdown-menu.html">Dropper Dropdown Menu</a>, which in 2009 Timo described as "the world's most accessible dropdown menu."</p>
 
-    <div id="a11yNavigation" role="navigation">
-        <ul class="a11yNav">
-            <li class="link"><a class="main" href="">About</a>
-                <ul class="a11ySub">
-                    <li><a href="">News</a></li> 
-                    <li><a href="">Governance</a></li> 
-                    <li><a href="">Diversity</a></li> 
-                    <li><a href="">Contact Us</a></li>                 
-                </ul> 
-            </li>
-            <li class="link"><a class="main" href="">Academics</a>
-                <ul class="a11ySub">
-                    <li><a href="">Degree Programs</a></li> 
-                    <li><a href="">Faculty</a></li> 
-                    <li><a href="">Distance Learning</a></li> 
-                    <li><a href="">Libraries</a></li> 
-                </ul>
-            </li>
-            <li class="link"><a class="main" href="">Admissions</a>
-                <ul class="a11ySub">
-                    <li><a href="">Undergraduate</a></li> 
-                    <li><a href="">Tuition</a></li> 
-                    <li><a href="">Financial Aid</a></li> 
-                </ul>
-            </li>
-            <li class="link"><a class="main" href="">Visitors</a>
-                <ul class="a11ySub">
-                    <li><a href="">Events</a></li> 
-                    <li><a href="">Campus Map</a></li> 
-                    <li><a href="">Parking</a></li> 
-                </ul>
-            </li>
-        </ul>    
+        <div id="a11yNavigation" role="navigation">
+            <ul class="a11yNav">
+                <li class="link"><a class="main" href="">About</a>
+                    <ul class="a11ySub">
+                        <li><a href="">News</a></li> 
+                        <li><a href="">Governance</a></li> 
+                        <li><a href="">Diversity</a></li> 
+                        <li><a href="">Contact Us</a></li>                 
+                    </ul> 
+                </li>
+                <li class="link"><a class="main" href="">Academics</a>
+                    <ul class="a11ySub">
+                        <li><a href="">Degree Programs</a></li> 
+                        <li><a href="">Faculty</a></li> 
+                        <li><a href="">Distance Learning</a></li> 
+                        <li><a href="">Libraries</a></li> 
+                    </ul>
+                </li>
+                <li class="link"><a class="main" href="">Admissions</a>
+                    <ul class="a11ySub">
+                        <li><a href="">Undergraduate</a></li> 
+                        <li><a href="">Tuition</a></li> 
+                        <li><a href="">Financial Aid</a></li> 
+                    </ul>
+                </li>
+                <li class="link"><a class="main" href="">Visitors</a>
+                    <ul class="a11ySub">
+                        <li><a href="">Events</a></li> 
+                        <li><a href="">Campus Map</a></li> 
+                        <li><a href="">Parking</a></li> 
+                    </ul>
+                </li>
+            </ul>    
+        </div>
+	    <h1>Dropdown Menu Test: Simply Accessible</h1>
+		
+	    <p>This is one of several dropdown menus tested on Terrill Thompson's <a href="http://staff.washington.edu/tft/tests/menus/index.html">Dropdown Menus Test Page</a>.</p>
+
+	    <h2>Description</h2>
+
+	    <p>This page applies techniques described in Derek Featherstone's article <a href="http://simplyaccessible.com/article/better-for-accessibility/">Better For Accessibility</a>, and specifically uses code from his <a href="http://simplyaccessible.com/examples/css-menu/option-6/">Option 6</a> example.</p>
+
+
+    <div role="navigation" aria-label="Main menu">
+	    <ul class="a11yNav2" role="menubar">
+		    <li>
+			    <a href="http://staff.washington.edu/tft/tests/menus/generic.html">About</a>
+			    <ul>
+				    <li><a href="http://staff.washington.edu/tft/tests/menus/generic.html" tabindex="-1">News</a></li>
+				    <li><a href="http://staff.washington.edu/tft/tests/menus/generic.html" tabindex="-1">Governance</a></li>
+				    <li><a href="http://staff.washington.edu/tft/tests/menus/generic.html" tabindex="-1">Diversity</a></li>
+				    <li><a href="http://staff.washington.edu/tft/tests/menus/generic.html" tabindex="-1">ContactUs</a></li>
+			    </ul>
+		    </li>
+		    <li>
+			    <a href="http://staff.washington.edu/tft/tests/menus/generic.html">About</a>
+			    <ul>
+				    <li><a href="http://staff.washington.edu/tft/tests/menus/generic.html" tabindex="-1">News</a></li>
+				    <li><a href="http://staff.washington.edu/tft/tests/menus/generic.html" tabindex="-1">Governance</a></li>
+				    <li><a href="http://staff.washington.edu/tft/tests/menus/generic.html" tabindex="-1">Diversity</a></li>
+				    <li><a href="http://staff.washington.edu/tft/tests/menus/generic.html" tabindex="-1">ContactUs</a></li>
+			    </ul>
+		    </li>
+		    <li>
+			    <a href="http://staff.washington.edu/tft/tests/menus/generic.html">About</a>
+			    <ul>
+				    <li><a href="http://staff.washington.edu/tft/tests/menus/generic.html" tabindex="-1">News</a></li>
+				    <li><a href="http://staff.washington.edu/tft/tests/menus/generic.html" tabindex="-1">Governance</a></li>
+				    <li><a href="http://staff.washington.edu/tft/tests/menus/generic.html" tabindex="-1">Diversity</a></li>
+				    <li><a href="http://staff.washington.edu/tft/tests/menus/generic.html" tabindex="-1">ContactUs</a></li>
+			    </ul>
+		    </li>
+		    <li>
+			    <a href="http://staff.washington.edu/tft/tests/menus/generic.html">About</a>
+			    <ul>
+				    <li><a href="http://staff.washington.edu/tft/tests/menus/generic.html" tabindex="-1">News</a></li>
+				    <li><a href="http://staff.washington.edu/tft/tests/menus/generic.html" tabindex="-1">Governance</a></li>
+				    <li><a href="http://staff.washington.edu/tft/tests/menus/generic.html" tabindex="-1">Diversity</a></li>
+				    <li><a href="http://staff.washington.edu/tft/tests/menus/generic.html" tabindex="-1">ContactUs</a></li>
+			    </ul>
+		    </li>
+	    </ul>	
     </div>
+		
+    <p>To exit the menu, <a href="http://staff.washington.edu/tft/tests/menus/simplyaccessible/index.html#">press tab again</a> and you should land safely in this paragraph.</p>		
+
     </body>
 </html>
